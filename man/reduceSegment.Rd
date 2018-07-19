@@ -30,5 +30,5 @@ data(segData)
 segData <- subset(segData, segData$Type == "TotalCN")
 reduceSegment(segData, 
 c("Chromosome", "StartPosition", "StopPosition", 
-"Median.Log2.Ratio", "FileName"))
+"Median.Log2.Ratio", "FileName"), 0.8)
 }

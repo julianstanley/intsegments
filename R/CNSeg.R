@@ -16,16 +16,21 @@
 #' segData <- subset(segData, segData$Type == "TotalCN")
 #' reduceSegment(segData, 
 #' c("Chromosome", "StartPosition", "StopPosition", 
-#' "Median.Log2.Ratio", "FileName"))
+#' "Median.Log2.Ratio", "FileName"), 0.8)
 #' @export
  
 
 reduceSegment <- function(sourceData, namesArray, filterThreshold) {
+  chromosome = namesArray[1]
+  start = namesArray[2]
+  stop = namesArray[3]
+  segMean = namesArray[4]
+  id = namesArray[5]
   
   cnseg <- CNSeg(segList = sourceData, 
-                 chromosome = namesArray[[1]], start = namesArray[[2]], 
-                 stop = namesArray[[3]], segMean = namesArray[[4]], 
-                 id = namesArray[[5]])
+                 chromosome = chromosome, end = stop, 
+                 start = start, segMean = segMean, 
+                 id = id)
   
   rdseg <- getRS(cnseg, by = "region", imput = FALSE, XY = FALSE, what = "mean")
   
