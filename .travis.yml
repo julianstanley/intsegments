@@ -5,6 +5,9 @@ dist: trusty
 cache: packages
 latex: false
 
+r_github_packages:
+  - hadley/devtools@efa894ffa
+  
 jobs:
   include:
   - r: 3.1
