@@ -2,19 +2,10 @@
 % Please edit documentation in R/create.R
 \name{create}
 \alias{create}
-\title{Create a reduced segment file (integreates other functions)}
+\title{Create a reduced segment file (integrates other functions)}
 \usage{
 create()
 }
-\arguments{
-\item{none}{no arguments yet}
-}
-\value{
-Nothing returned yet
-}
 \description{
-Create a reduced segment file (integreates other functions)
-}
-\examples{
-create()
+Create a reduced segment file (integrates other functions)
 }

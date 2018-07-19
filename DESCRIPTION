@@ -2,8 +2,12 @@ Package: intsegments
 Version: 0.1
 Date: 2018-07-18
 Title: Interactive Segments
-Description: An interactive wrapper on the reduced segments functionality of CNSeg from CNTools
+Description: An interactive wrapper on the reduced segments functionality of CNSeg from CNTools. 
 Author: Julian Stanley <julianstanley.A@gmail.com>
 Maintainer: Julian Stanley <julianstanley.A@gmail.com>
 RoxygenNote: 6.0.1
 License: MIT + file LICENSE
+Imports:
+	utils,
+	CNTools (>= 1.34.0)
+LazyData: true

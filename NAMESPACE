@@ -2,3 +2,6 @@
 
 export(create)
 export(import_segments)
+export(reduceSegment)
+import(CNTools)
+import(utils)

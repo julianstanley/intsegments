@@ -6,17 +6,9 @@
 \usage{
 import_segments()
 }
-\arguments{
-\item{interactive_input_path}{A full file path to the tab-delineated imput file}
-
-\item{more}{Will add more}
-}
 \value{
 chromosome The "chromosome" variable is created
 }
 \description{
 Imports the inital variables from a segments file
-}
-\examples{
-import_segments()
 }
