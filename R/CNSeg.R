@@ -1,4 +1,4 @@
-#' Core: Creates a filtered consensus segments file based on a traditional segments file
+#' segment(sourceData, namesArray, filterThreshold) creates segments with CNSeg from raw data
 #' @import utils 
 #' @import CNTools 
 #' @param sourceData (dataframe or matrix) the original segments table
@@ -20,7 +20,7 @@
 #' @export
  
 
-reduceSegment <- function(sourceData, namesArray, filterThreshold) {
+segment <- function(sourceData, namesArray, filterThreshold) {
   chromosome = namesArray[1]
   start = namesArray[2]
   stop = namesArray[3]
