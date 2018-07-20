@@ -10,6 +10,5 @@ License: MIT + file LICENSE
 Imports:
 	utils,
 	CNTools (>= 1.34.0)
-
 Depends: CNTools (>= 1.34.0)
 LazyData: true

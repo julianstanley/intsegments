@@ -14,7 +14,7 @@
 #' # Read the raw segment data
 #' data(segData)
 #' segData <- subset(segData, segData$Type == "TotalCN")
-#' reduceSegment(segData, 
+#' segment(segData, 
 #' c("Chromosome", "StartPosition", "StopPosition", 
 #' "Median.Log2.Ratio", "FileName"), 0.8)
 #' @export
